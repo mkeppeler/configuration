@@ -1,0 +1,4 @@
+# Mysql
+com.instana.plugin.mysql:
+  user: 'root'
+  password: 'password'
