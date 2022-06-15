@@ -1,3 +1,11 @@
 com.instana.plugin.host:
   tags:
   - gitops_environment=test
+
+com.instana.plugin.prometheus:
+  # Global (all) endpoints username/password configuration (optional)
+  username: ''
+  password: ''
+  customMetricSources:
+  - url: 'http://150.238.196.99:9100/metrics'            # metrics endpoint, the IP and port are auto-discovered
+    metricNameIncludeRegex: '.*'             # regular expression to filter metrics
